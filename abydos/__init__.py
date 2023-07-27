@@ -39,7 +39,7 @@ use.
 
 """
 
-__version__ = '0.6.0'
+from abydos.version import __version__
 
 __all__ = [
     '__version__',
