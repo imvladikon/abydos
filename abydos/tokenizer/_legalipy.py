@@ -23,8 +23,6 @@ from typing import Callable, Optional, Union
 import logging
 from abydos.tokenizer._tokenizer import _Tokenizer
 
-logger = logging.getLogger(__name__)
-
 try:
     from syllabipy.legalipy import LegaliPy
     from syllabipy.legalipy import getOnsets as gen_onsets  # noqa: N813
@@ -35,10 +33,6 @@ except ImportError:  # pragma: no cover
     LegaliPy = None  # type: ignore
     gen_onsets = None  # type: ignore
 
-    logger.warning(
-        'LegaliPy tokenizer requires installation of SyllabiPy package.'
-    )
-
 
 class LegaliPyTokenizer(_Tokenizer):
     """LegaliPy tokenizer.
@@ -47,7 +41,7 @@ class LegaliPyTokenizer(_Tokenizer):
     """
 
     def __init__(
-        self, scaler: Optional[Union[str, Callable[[float], float]]] = None,
+            self, scaler: Optional[Union[str, Callable[[float], float]]] = None,
     ) -> None:
         """Initialize Tokenizer.
 
@@ -83,11 +77,11 @@ class LegaliPyTokenizer(_Tokenizer):
         self._onsets = ['']
 
     def train_onsets(
-        self,
-        text: str,
-        threshold: float = 0.0002,
-        clean: bool = True,
-        append: bool = False,
+            self,
+            text: str,
+            threshold: float = 0.0002,
+            clean: bool = True,
+            append: bool = False,
     ) -> None:
         """Train the onsets on a text.
 

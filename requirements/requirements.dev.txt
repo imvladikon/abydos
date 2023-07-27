@@ -7,3 +7,6 @@ lzss
 paq
 sphinxcontrib-bibtex
 sphinx_rtd_theme
+nltk
+syllabipy
+deprecation
