@@ -22,10 +22,11 @@ import importlib
 import os
 from codecs import open
 from os import path
+from pathlib import Path
 
 from setuptools import find_packages, setup
 
-HERE = path.abspath(path.dirname(__file__))
+HERE = Path(path.abspath(path.dirname(__file__)))
 
 __package_name__ = 'abydos'
 __location__ = os.path.realpath(os.path.join(os.getcwd(), os.path.dirname(__file__)))
@@ -48,8 +49,7 @@ __version__ = get_version(__package_name__)
 
 
 def readfile(fn):
-    with open(path.join(HERE, fn), 'r', encoding='utf-8') as f:
-        return f.read()
+    return (HERE / fn).read_text(encoding='utf8')
 
 
 def read_requirements(reqs_path):
@@ -74,47 +74,46 @@ def get_extra_requires(path, add_all=True, ext='*.txt'):
     return extra_deps
 
 
-if __name__ == '__main__':
-    setup(
-        name=__package_name__,
-        packages=find_packages(exclude=['tests*']),
-        version=__version__,
-        description='Fork of the Abydos NLP/IR library',
-        author='Christopher C. Little',
-        author_email='chrisclittle+abydos@gmail.com',
-        url='https://github.com/imvladikon/abydos',
-        download_url='https://github.com/imvladikon/abydos/archive/master.zip',
-        keywords=[
-            'nlp',
-            'ai',
-            'ir',
-            'language',
-            'linguistics',
-            'phonetic algorithms',
-            'string distance',
-        ],
-        license='GPLv3+',
-        classifiers=[
-            'Programming Language :: Python',
-            'Programming Language :: Python :: 3',
-            'Programming Language :: Python :: 3.8',
-            'Programming Language :: Python :: 3.9',
-            'Development Status :: 5 - Production/Stable',
-            'Intended Audience :: Developers',
-            'License :: OSI Approved :: GNU General Public License v3 or \
+setup(
+    name=__package_name__,
+    packages=find_packages(exclude=['tests*']),
+    version=__version__,
+    description='Fork of the Abydos NLP/IR library',
+    author='Christopher C. Little',
+    author_email='chrisclittle+abydos@gmail.com',
+    url='https://github.com/imvladikon/abydos',
+    download_url='https://github.com/imvladikon/abydos/archive/master.zip',
+    keywords=[
+        'nlp',
+        'ai',
+        'ir',
+        'language',
+        'linguistics',
+        'phonetic algorithms',
+        'string distance',
+    ],
+    license='GPLv3+',
+    classifiers=[
+        'Programming Language :: Python',
+        'Programming Language :: Python :: 3',
+        'Programming Language :: Python :: 3.8',
+        'Programming Language :: Python :: 3.9',
+        'Development Status :: 5 - Production/Stable',
+        'Intended Audience :: Developers',
+        'License :: OSI Approved :: GNU General Public License v3 or \
 later (GPLv3+)',
-            'Operating System :: OS Independent',
-            'Topic :: Scientific/Engineering :: Artificial Intelligence',
-            'Topic :: Software Development :: Libraries :: Python Modules',
-            'Topic :: Text Processing :: Indexing',
-            'Topic :: Text Processing :: Linguistic',
-            'Natural Language :: English',
-        ],
-        long_description_content_type='text/x-rst',
-        long_description='\n\n'.join(
-            [readfile(f) for f in ('README.rst', 'HISTORY.rst', 'AUTHORS.rst')]
-        ),
-        python_requires='>=3.8',
-        install_requires=read_requirements(HERE / 'requirements.txt'),
-        extras_require=get_extra_requires(HERE / 'requirements')
-    )
+        'Operating System :: OS Independent',
+        'Topic :: Scientific/Engineering :: Artificial Intelligence',
+        'Topic :: Software Development :: Libraries :: Python Modules',
+        'Topic :: Text Processing :: Indexing',
+        'Topic :: Text Processing :: Linguistic',
+        'Natural Language :: English',
+    ],
+    long_description_content_type='text/x-rst',
+    long_description='\n\n'.join(
+        [readfile(f) for f in ('README.rst', 'HISTORY.rst', 'AUTHORS.rst')]
+    ),
+    python_requires='>=3.8',
+    install_requires=read_requirements(HERE / 'requirements.txt'),
+    extras_require=get_extra_requires(HERE / 'requirements')
+)
