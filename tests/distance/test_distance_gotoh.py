@@ -24,7 +24,7 @@ import unittest
 from abydos.distance import Gotoh, NeedlemanWunsch
 
 from .test_distance_needleman_wunsch import _sim_nw, _sim_wikipedia
-from .. import NIALL
+from tests import NIALL
 
 
 class GotohTestCases(unittest.TestCase):

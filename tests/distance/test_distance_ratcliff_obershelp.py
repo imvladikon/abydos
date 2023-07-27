@@ -24,7 +24,7 @@ from difflib import SequenceMatcher
 
 from abydos.distance import RatcliffObershelp
 
-from .. import _corpus_file
+from tests import _corpus_file
 
 
 class RatcliffObershelpTestCases(unittest.TestCase):

@@ -24,7 +24,7 @@ import unittest
 
 from abydos.phonetic import Phonet
 
-from .. import ALLOW_RANDOM, _corpus_file, _one_in
+from tests import ALLOW_RANDOM, _corpus_file, _one_in
 
 
 class PhonetTestCases(unittest.TestCase):

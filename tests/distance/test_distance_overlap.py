@@ -24,7 +24,7 @@ import unittest
 from abydos.distance import Overlap
 from abydos.tokenizer import QGrams, WhitespaceTokenizer
 
-from .. import NONQ_FROM, NONQ_TO
+from tests import NONQ_FROM, NONQ_TO
 
 
 class OverlapTestCases(unittest.TestCase):

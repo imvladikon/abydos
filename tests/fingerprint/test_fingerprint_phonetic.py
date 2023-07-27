@@ -25,7 +25,7 @@ from abydos.fingerprint import Phonetic
 from abydos.phonetic import Phonet, Soundex
 
 
-from .. import NIALL
+from tests import NIALL
 
 
 class PhoneticTestCases(unittest.TestCase):

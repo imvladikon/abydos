@@ -25,8 +25,8 @@ import unicodedata
 from random import choice, randint, random
 from string import printable
 
-from .. import EXTREME_TEST as SUPER_EXTREME_TEST
-from .. import _corpus_file as _super_corpus_file
+from tests import EXTREME_TEST as SUPER_EXTREME_TEST
+from tests import _corpus_file as _super_corpus_file
 
 CORPORA = os.path.join(os.path.dirname(__file__), 'corpora')
 

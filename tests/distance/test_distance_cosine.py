@@ -25,7 +25,7 @@ import unittest
 from abydos.distance import Cosine
 from abydos.tokenizer import QGrams, WhitespaceTokenizer
 
-from .. import NONQ_FROM, NONQ_TO
+from tests import NONQ_FROM, NONQ_TO
 
 
 class CosineSimilarityTestCases(unittest.TestCase):

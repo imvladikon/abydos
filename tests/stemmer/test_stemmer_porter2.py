@@ -24,7 +24,7 @@ import unittest
 from abydos.stemmer import Porter2
 
 
-from .. import _corpus_file
+from tests import _corpus_file
 
 
 class Porter2TestCases(unittest.TestCase):

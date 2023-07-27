@@ -24,7 +24,7 @@ import unittest
 from abydos.compression import Arithmetic
 from abydos.distance import NCDarith
 
-from .. import NIALL
+from tests import NIALL
 
 
 class NCDarithTestCases(unittest.TestCase):

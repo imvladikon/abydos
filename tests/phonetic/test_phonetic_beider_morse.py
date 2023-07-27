@@ -46,7 +46,7 @@ from abydos.phonetic._beider_morse_data import (
     L_TURKISH,
 )
 
-from .. import ALLOW_RANDOM, _corpus_file, _one_in
+from tests import ALLOW_RANDOM, _corpus_file, _one_in
 
 
 class BeiderMorseTestCases(unittest.TestCase):

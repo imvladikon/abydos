@@ -24,7 +24,7 @@ import unittest
 
 from abydos.stemmer import SnowballDutch
 
-from .. import _corpus_file
+from tests import _corpus_file
 
 
 class SnowballDutchTestCases(unittest.TestCase):

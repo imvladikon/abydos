@@ -25,7 +25,7 @@ from collections import Counter
 from abydos.corpus import Corpus
 from abydos.corpus import NGramCorpus
 
-from .. import _corpus_file
+from tests import _corpus_file
 
 
 class NGramCorpusTestCases(unittest.TestCase):

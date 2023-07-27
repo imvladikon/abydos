@@ -29,7 +29,7 @@ from abydos.corpus import UnigramCorpus
 from abydos.phonetic import Soundex
 from abydos.tokenizer import QSkipgrams
 
-from .. import _corpus_file
+from tests import _corpus_file
 
 
 class UnigramCorpusTestCases(unittest.TestCase):
@@ -104,7 +104,7 @@ class UnigramCorpusTestCases(unittest.TestCase):
         if sys.version_info < (3, 6):
             return
 
-        self.sdx_corpus.gng_importer('tests/corpora/simple-ngrams.txt')
+        self.sdx_corpus.gng_importer('../tests/corpora/simple-ngrams.txt')
         self.assertEqual(
             list(self.sdx_corpus.corpus.items()),
             [
@@ -126,7 +126,7 @@ class UnigramCorpusTestCases(unittest.TestCase):
             ],
         )
 
-        self.qsg_corpus.gng_importer('tests/corpora/simple-ngrams.txt')
+        self.qsg_corpus.gng_importer('../tests/corpora/simple-ngrams.txt')
         self.assertEqual(
             list(self.qsg_corpus.corpus.items())[:30:2],
             [

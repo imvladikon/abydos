@@ -23,7 +23,7 @@ import unittest
 
 from abydos.distance import NeedlemanWunsch
 
-from .. import NIALL
+from tests import NIALL
 
 
 def _sim_wikipedia(src, tar):

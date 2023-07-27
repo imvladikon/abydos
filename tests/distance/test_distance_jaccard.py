@@ -25,7 +25,7 @@ from math import log2
 from abydos.distance import Jaccard
 from abydos.tokenizer import QGrams, WhitespaceTokenizer
 
-from .. import NONQ_FROM, NONQ_TO
+from tests import NONQ_FROM, NONQ_TO
 
 
 class JaccardTestCases(unittest.TestCase):

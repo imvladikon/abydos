@@ -23,7 +23,7 @@ import unittest
 
 from abydos.fingerprint import QGram
 
-from .. import NIALL
+from tests import NIALL
 
 
 class QGramTestCases(unittest.TestCase):

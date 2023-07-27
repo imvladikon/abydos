@@ -23,7 +23,7 @@ import unittest
 
 from abydos.stemmer import Schinke
 
-from .. import _corpus_file
+from tests import _corpus_file
 
 
 class SchinkeTestCases(unittest.TestCase):

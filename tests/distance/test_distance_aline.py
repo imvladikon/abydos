@@ -555,13 +555,13 @@ class ALINETestCases(unittest.TestCase):
     def test_aline_sim(self):
         """Test abydos.distance.ALINE.sim."""
         # Base cases
-        self.assertEqual(self.cmp.sim('', ''), 1.0)
-        self.assertEqual(self.cmp.sim('a', ''), 0.0)
-        self.assertEqual(self.cmp.sim('', 'a'), 0.0)
-        self.assertEqual(self.cmp.sim('abc', ''), 0.0)
-        self.assertEqual(self.cmp.sim('', 'abc'), 0.0)
-        self.assertEqual(self.cmp.sim('abc', 'abc'), 1.0)
-        self.assertEqual(self.cmp.sim('abcd', 'efgh'), 0.425)
+        self.assertAlmostEqual(self.cmp.sim('', ''), 1.0)
+        self.assertAlmostEqual(self.cmp.sim('a', ''), 0.0)
+        self.assertAlmostEqual(self.cmp.sim('', 'a'), 0.0)
+        self.assertAlmostEqual(self.cmp.sim('abc', ''), 0.0)
+        self.assertAlmostEqual(self.cmp.sim('', 'abc'), 0.0)
+        self.assertAlmostEqual(self.cmp.sim('abc', 'abc'), 1.0)
+        self.assertAlmostEqual(self.cmp.sim('abcd', 'efgh'), 0.425)
 
         self.assertAlmostEqual(self.cmp.sim('nigel', 'niall'), 0.7037037037)
         self.assertAlmostEqual(self.cmp.sim('niall', 'nigel'), 0.7037037037)

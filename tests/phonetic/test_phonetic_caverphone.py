@@ -23,7 +23,7 @@ import unittest
 
 from abydos.phonetic import Caverphone, Metaphone, Soundex
 
-from .. import _corpus_file
+from tests import _corpus_file
 
 
 class CaverphoneTestCases(unittest.TestCase):

@@ -23,7 +23,7 @@ import unittest
 
 from abydos.tokenizer import LegaliPyTokenizer
 
-from .. import _corpus_file
+from tests import _corpus_file
 
 
 class LegaliPyTokenizerTestCases(unittest.TestCase):

@@ -24,7 +24,7 @@ from fractions import Fraction
 
 from abydos.compression import Arithmetic
 
-from .. import NIALL
+from tests import NIALL
 
 
 class ArithmeticCoderTestCases(unittest.TestCase):
