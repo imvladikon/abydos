@@ -3,8 +3,6 @@
 
 wheel
 twine
-nltk
-syllabipy
 lzss
 paq
 sphinxcontrib-bibtex
