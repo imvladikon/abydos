@@ -22,7 +22,7 @@ import re
 
 from typing import Callable, Optional, Union
 
-from ._tokenizer import _Tokenizer
+from abydos.tokenizer._tokenizer import _Tokenizer
 
 __all__ = ['RegexpTokenizer']
 

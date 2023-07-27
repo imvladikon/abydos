@@ -29,7 +29,7 @@ import unicodedata
 
 from typing import Callable, Optional, Set, Union
 
-from ._tokenizer import _Tokenizer
+from abydos.tokenizer._tokenizer import _Tokenizer
 
 __all__ = ['COrVClusterTokenizer']
 

@@ -19,7 +19,7 @@
 Library of Congress Cutter table encoding
 """
 
-from ._fingerprint import _Fingerprint
+from abydos.fingerprint._fingerprint import _Fingerprint
 
 __all__ = ['LCCutter']
 

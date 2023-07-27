@@ -22,7 +22,7 @@ NLTK tokenizer wrapper class
 from inspect import isclass
 from typing import Callable, Optional, Union
 
-from ._tokenizer import _Tokenizer
+from abydos.tokenizer._tokenizer import _Tokenizer
 
 
 class NLTKTokenizer(_Tokenizer):

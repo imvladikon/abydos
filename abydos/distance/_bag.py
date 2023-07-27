@@ -20,8 +20,8 @@ Bag similarity & distance
 """
 from typing import Any, Optional
 
-from ._token_distance import _TokenDistance
-from ..tokenizer import CharacterTokenizer, _Tokenizer
+from abydos.distance._token_distance import _TokenDistance
+from abydos.tokenizer import CharacterTokenizer, _Tokenizer
 
 __all__ = ['Bag']
 

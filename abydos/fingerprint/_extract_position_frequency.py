@@ -21,7 +21,7 @@ Taft's extract - position & frequency coding
 
 from typing import List
 
-from ._fingerprint import _Fingerprint
+from abydos.fingerprint._fingerprint import _Fingerprint
 
 __all__ = ['ExtractPositionFrequency']
 

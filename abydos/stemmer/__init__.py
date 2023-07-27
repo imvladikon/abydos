@@ -70,24 +70,24 @@ form:
 
 """
 
-from ._caumanns import Caumanns
-from ._clef_german import CLEFGerman
-from ._clef_german_plus import CLEFGermanPlus
-from ._clef_swedish import CLEFSwedish
-from ._lovins import Lovins
-from ._paice_husk import PaiceHusk
-from ._porter import Porter
-from ._porter2 import Porter2
-from ._s_stemmer import SStemmer
-from ._schinke import Schinke
-from ._snowball import _Snowball
-from ._snowball_danish import SnowballDanish
-from ._snowball_dutch import SnowballDutch
-from ._snowball_german import SnowballGerman
-from ._snowball_norwegian import SnowballNorwegian
-from ._snowball_swedish import SnowballSwedish
-from ._stemmer import _Stemmer
-from ._uea_lite import UEALite
+from abydos.stemmer._caumanns import Caumanns
+from abydos.stemmer._clef_german import CLEFGerman
+from abydos.stemmer._clef_german_plus import CLEFGermanPlus
+from abydos.stemmer._clef_swedish import CLEFSwedish
+from abydos.stemmer._lovins import Lovins
+from abydos.stemmer._paice_husk import PaiceHusk
+from abydos.stemmer._porter import Porter
+from abydos.stemmer._porter2 import Porter2
+from abydos.stemmer._s_stemmer import SStemmer
+from abydos.stemmer._schinke import Schinke
+from abydos.stemmer._snowball import _Snowball
+from abydos.stemmer._snowball_danish import SnowballDanish
+from abydos.stemmer._snowball_dutch import SnowballDutch
+from abydos.stemmer._snowball_german import SnowballGerman
+from abydos.stemmer._snowball_norwegian import SnowballNorwegian
+from abydos.stemmer._snowball_swedish import SnowballSwedish
+from abydos.stemmer._stemmer import _Stemmer
+from abydos.stemmer._uea_lite import UEALite
 
 __all__ = [
     '_Stemmer',

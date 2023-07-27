@@ -25,7 +25,7 @@ from collections import Counter, defaultdict
 from math import log1p
 from typing import Any, Callable, DefaultDict, Optional, Tuple
 
-from ..tokenizer import _Tokenizer
+from abydos.tokenizer import _Tokenizer
 
 __all__ = ['UnigramCorpus']
 

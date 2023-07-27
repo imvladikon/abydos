@@ -19,7 +19,7 @@
 MRA personal numeric identifier (PNI).
 """
 
-from ._phonetic import _Phonetic
+from abydos.phonetic._phonetic import _Phonetic
 
 __all__ = ['MRA']
 

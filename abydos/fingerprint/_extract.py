@@ -21,7 +21,7 @@ Taft's extract letter list coding
 
 from typing import Iterable, Union, cast
 
-from ._fingerprint import _Fingerprint
+from abydos.fingerprint._fingerprint import _Fingerprint
 
 __all__ = ['Extract']
 

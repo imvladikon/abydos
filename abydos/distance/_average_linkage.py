@@ -20,10 +20,10 @@ Average linkage distance
 """
 from typing import Any, Optional, cast
 
-from ._distance import _Distance
-from ._levenshtein import Levenshtein
-from ._token_distance import _TokenDistance
-from ..tokenizer import _Tokenizer
+from abydos.distance._distance import _Distance
+from abydos.distance._levenshtein import Levenshtein
+from abydos.distance._token_distance import _TokenDistance
+from abydos.tokenizer import _Tokenizer
 
 __all__ = ['AverageLinkage']
 

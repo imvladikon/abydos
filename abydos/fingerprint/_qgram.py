@@ -21,8 +21,8 @@ q-gram fingerprint
 
 from unicodedata import normalize as unicode_normalize
 
-from ._fingerprint import _Fingerprint
-from ..tokenizer import QGrams
+from abydos.fingerprint._fingerprint import _Fingerprint
+from abydos.tokenizer import QGrams
 
 __all__ = ['QGram']
 

@@ -21,7 +21,7 @@ Snowball Stemmer base class
 
 from typing import Iterable, Optional, cast
 
-from ._stemmer import _Stemmer
+from abydos.stemmer._stemmer import _Stemmer
 
 __all__ = ['_Snowball']
 

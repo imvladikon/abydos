@@ -22,7 +22,7 @@ Longest common suffix
 from os.path import commonprefix
 from typing import List, cast
 
-from ._lcprefix import LCPrefix
+from abydos.distance._lcprefix import LCPrefix
 
 __all__ = ['LCSuffix']
 

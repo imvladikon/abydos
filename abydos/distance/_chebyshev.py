@@ -29,8 +29,8 @@ from typing import (
     Union,
 )
 
-from ._minkowski import Minkowski
-from ..tokenizer import _Tokenizer
+from abydos.distance._minkowski import Minkowski
+from abydos.tokenizer import _Tokenizer
 
 __all__ = ['Chebyshev']
 

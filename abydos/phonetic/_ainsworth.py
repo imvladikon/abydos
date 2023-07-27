@@ -21,7 +21,7 @@ Ainsworth's grapheme to phoneme converter
 
 import re
 
-from ._phonetic import _Phonetic
+from abydos.phonetic._phonetic import _Phonetic
 
 __all__ = ['Ainsworth']
 

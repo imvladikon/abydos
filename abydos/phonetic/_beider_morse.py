@@ -51,7 +51,7 @@ from ._beider_morse_data import (
     L_SPANISH,
     L_TURKISH,
 )
-from ._phonetic import _Phonetic
+from abydos.phonetic._phonetic import _Phonetic
 
 __all__ = ['BeiderMorse']
 

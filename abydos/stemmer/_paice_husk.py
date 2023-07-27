@@ -21,7 +21,7 @@ Paice-Husk Stemmer
 
 from typing import Dict, Optional, Tuple
 
-from ._stemmer import _Stemmer
+from abydos.stemmer._stemmer import _Stemmer
 
 __all__ = ['PaiceHusk']
 

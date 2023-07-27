@@ -19,7 +19,7 @@
 L.A. County Sheriff's System fingerprint
 """
 
-from ._fingerprint import _Fingerprint
+from abydos.fingerprint._fingerprint import _Fingerprint
 
 __all__ = ['LACSS']
 

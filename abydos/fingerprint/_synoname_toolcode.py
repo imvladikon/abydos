@@ -21,7 +21,7 @@ Synoname toolcode
 
 from typing import Tuple
 
-from ._fingerprint import _Fingerprint
+from abydos.fingerprint._fingerprint import _Fingerprint
 
 __all__ = ['SynonameToolcode']
 

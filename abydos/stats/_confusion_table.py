@@ -36,7 +36,7 @@ import math
 
 from typing import Dict, List, Tuple, Union
 
-from ._mean import (
+from abydos.stats._mean import (
     aghmean,
     agmean,
     amean,

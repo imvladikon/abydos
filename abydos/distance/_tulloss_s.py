@@ -22,8 +22,8 @@ Tulloss' S similarity
 from math import log2
 from typing import Any, Optional
 
-from ._token_distance import _TokenDistance
-from ..tokenizer import _Tokenizer
+from abydos.distance._token_distance import _TokenDistance
+from abydos.tokenizer import _Tokenizer
 
 __all__ = ['TullossS']
 

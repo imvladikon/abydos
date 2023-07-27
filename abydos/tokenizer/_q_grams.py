@@ -22,7 +22,7 @@ QGrams multi-set class
 from collections.abc import Iterable
 from typing import Callable, Iterable as TIterable, Optional, Union, cast
 
-from ._tokenizer import _Tokenizer
+from abydos.tokenizer._tokenizer import _Tokenizer
 
 __all__ = ['QGrams']
 

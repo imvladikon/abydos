@@ -21,8 +21,8 @@ Euclidean distance & similarity
 
 from typing import Any, Counter as TCounter, Optional, Sequence, Set, Union
 
-from ._minkowski import Minkowski
-from ..tokenizer import _Tokenizer
+from abydos.distance._minkowski import Minkowski
+from abydos.tokenizer import _Tokenizer
 
 __all__ = ['Euclidean']
 

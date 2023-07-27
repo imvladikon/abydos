@@ -19,7 +19,7 @@
 Metaphone
 """
 
-from ._phonetic import _Phonetic
+from abydos.phonetic._phonetic import _Phonetic
 
 __all__ = ['Metaphone']
 

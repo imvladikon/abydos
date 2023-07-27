@@ -24,7 +24,7 @@ from typing import Tuple
 from numpy import int_ as np_int
 from numpy import zeros as np_zeros
 
-from ._distance import _Distance
+from abydos.distance._distance import _Distance
 
 __all__ = ['RatcliffObershelp']
 

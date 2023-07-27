@@ -90,5 +90,5 @@ later (GPLv3+)',
             [readfile(f) for f in ('README.rst', 'HISTORY.rst', 'AUTHORS.rst')]
         ),
         install_requires=['numpy', 'deprecation'],
-        python_requires='~=3.5',
+        python_requires='>=3.8',
     )

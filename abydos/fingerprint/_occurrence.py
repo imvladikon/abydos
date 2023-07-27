@@ -21,7 +21,7 @@ Cisłak & Grabowski's occurrence fingerprint
 
 from typing import Tuple
 
-from ._fingerprint import MOST_COMMON_LETTERS_CG, _Fingerprint
+from abydos.fingerprint._fingerprint import MOST_COMMON_LETTERS_CG, _Fingerprint
 
 __all__ = ['Occurrence']
 

@@ -20,7 +20,7 @@ New York State Identification and Intelligence System (NYSIIS) phonetic
 encoding
 """
 
-from ._phonetic import _Phonetic
+from abydos.phonetic._phonetic import _Phonetic
 
 __all__ = ['NYSIIS']
 

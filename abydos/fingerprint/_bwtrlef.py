@@ -19,9 +19,9 @@
 Burrows-Wheeler transform plus run-length encoding fingerprint
 """
 
-from ._fingerprint import _Fingerprint
-from ..compression import BWT as _BWT
-from ..compression import RLE as _RLE
+from abydos.fingerprint._fingerprint import _Fingerprint
+from abydos.compression import BWT as _BWT
+from abydos.compression import RLE as _RLE
 
 __all__ = ['BWTRLEF']
 

@@ -21,7 +21,7 @@ SoundexBR
 
 from unicodedata import normalize as unicode_normalize
 
-from ._phonetic import _Phonetic
+from abydos.phonetic._phonetic import _Phonetic
 
 __all__ = ['SoundexBR']
 

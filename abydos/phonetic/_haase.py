@@ -23,7 +23,7 @@ from itertools import product
 from typing import List, Set, Tuple, Union, cast
 from unicodedata import normalize as unicode_normalize
 
-from ._phonetic import _Phonetic
+from abydos.phonetic._phonetic import _Phonetic
 
 __all__ = ['Haase']
 

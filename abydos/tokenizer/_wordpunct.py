@@ -21,7 +21,7 @@ Wordpunct tokenizer (analogous to NLTK's workpunct tokenizer)
 
 from typing import Callable, Optional, Union
 
-from ._regexp import RegexpTokenizer
+from abydos.tokenizer._regexp import RegexpTokenizer
 
 __all__ = ['WordpunctTokenizer']
 

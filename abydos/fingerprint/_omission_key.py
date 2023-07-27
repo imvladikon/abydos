@@ -21,7 +21,7 @@ omission key
 
 from unicodedata import normalize as unicode_normalize
 
-from ._fingerprint import _Fingerprint
+from abydos.fingerprint._fingerprint import _Fingerprint
 
 __all__ = ['OmissionKey']
 

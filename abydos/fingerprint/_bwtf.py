@@ -19,8 +19,8 @@
 Burrows-Wheeler transform fingerprint
 """
 
-from ._fingerprint import _Fingerprint
-from ..compression import BWT as _BWT
+from abydos.fingerprint._fingerprint import _Fingerprint
+from abydos.compression import BWT as _BWT
 
 __all__ = ['BWTF']
 

@@ -24,7 +24,7 @@ from typing import Any, Callable, Optional, cast
 from numpy import float_ as np_float
 from numpy import zeros as np_zeros
 
-from ._needleman_wunsch import NeedlemanWunsch
+from abydos.distance._needleman_wunsch import NeedlemanWunsch
 
 __all__ = ['SmithWaterman']
 

@@ -22,7 +22,7 @@ IBM's Alpha Search Inquiry System coding
 from typing import Dict, List, Tuple, Union
 from unicodedata import normalize as unicode_normalize
 
-from ._phonetic import _Phonetic
+from abydos.phonetic._phonetic import _Phonetic
 
 __all__ = ['AlphaSIS']
 

@@ -23,7 +23,7 @@ from codecs import open as c_open
 from collections import Counter
 from typing import Any, Counter as TCounter, List, Optional, Union, cast
 
-from ._corpus import Corpus
+from abydos.corpus._corpus import Corpus
 
 __all__ = ['NGramCorpus']
 

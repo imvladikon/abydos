@@ -22,8 +22,8 @@ Positional Q-Gram Jaccard coefficient
 from collections import defaultdict
 from typing import Any, DefaultDict, List, Optional
 
-from ._distance import _Distance
-from ..tokenizer import QGrams, WhitespaceTokenizer, _Tokenizer
+from abydos.distance._distance import _Distance
+from abydos.tokenizer import QGrams, WhitespaceTokenizer, _Tokenizer
 
 __all__ = ['PositionalQGramJaccard']
 

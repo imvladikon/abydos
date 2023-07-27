@@ -21,7 +21,7 @@ Double Metaphone
 
 from typing import Set, Tuple
 
-from ._phonetic import _Phonetic
+from abydos.phonetic._phonetic import _Phonetic
 
 __all__ = ['DoubleMetaphone']
 

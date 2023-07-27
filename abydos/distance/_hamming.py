@@ -21,7 +21,7 @@ Hamming distance
 
 from typing import Any
 
-from ._distance import _Distance
+from abydos.distance._distance import _Distance
 
 __all__ = ['Hamming']
 

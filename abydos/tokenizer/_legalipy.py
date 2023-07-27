@@ -20,8 +20,10 @@ LegaliPy tokenizer class
 """
 
 from typing import Callable, Optional, Union
+import logging
+from abydos.tokenizer._tokenizer import _Tokenizer
 
-from ._tokenizer import _Tokenizer
+logger = logging.getLogger(__name__)
 
 try:
     from syllabipy.legalipy import LegaliPy
@@ -29,8 +31,13 @@ try:
 except ImportError:  # pragma: no cover
     # If the system lacks the SyllabiPy library, that's fine, but SyllabiPy
     # tokenization won't be supported.
+
     LegaliPy = None  # type: ignore
     gen_onsets = None  # type: ignore
+
+    logger.warning(
+        'LegaliPy tokenizer requires installation of SyllabiPy package.'
+    )
 
 
 class LegaliPyTokenizer(_Tokenizer):

@@ -24,7 +24,7 @@ Abydos, including:
 These functions are not intended for use by users.
 """
 
-from ._data import (
+from abydos.util._data import (
     data_path,
     download_package,
     list_available_packages,

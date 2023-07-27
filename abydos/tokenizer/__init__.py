@@ -91,20 +91,20 @@ Finally, an NLTK tokenizer is provided:
 
 """
 
-from ._c_or_v_cluster import COrVClusterTokenizer
-from ._character import CharacterTokenizer
-from ._cv_cluster import CVClusterTokenizer
-from ._legalipy import LegaliPyTokenizer
-from ._nltk import NLTKTokenizer
-from ._q_grams import QGrams
-from ._q_skipgrams import QSkipgrams
-from ._regexp import RegexpTokenizer
-from ._saps import SAPSTokenizer
-from ._sonoripy import SonoriPyTokenizer
-from ._tokenizer import _Tokenizer
-from ._vc_cluster import VCClusterTokenizer
-from ._whitespace import WhitespaceTokenizer
-from ._wordpunct import WordpunctTokenizer
+from abydos.tokenizer._c_or_v_cluster import COrVClusterTokenizer
+from abydos.tokenizer._character import CharacterTokenizer
+from abydos.tokenizer._cv_cluster import CVClusterTokenizer
+from abydos.tokenizer._legalipy import LegaliPyTokenizer
+from abydos.tokenizer._nltk import NLTKTokenizer
+from abydos.tokenizer._q_grams import QGrams
+from abydos.tokenizer._q_skipgrams import QSkipgrams
+from abydos.tokenizer._regexp import RegexpTokenizer
+from abydos.tokenizer._saps import SAPSTokenizer
+from abydos.tokenizer._sonoripy import SonoriPyTokenizer
+from abydos.tokenizer._tokenizer import _Tokenizer
+from abydos.tokenizer._vc_cluster import VCClusterTokenizer
+from abydos.tokenizer._whitespace import WhitespaceTokenizer
+from abydos.tokenizer._wordpunct import WordpunctTokenizer
 
 __all__ = [
     '_Tokenizer',

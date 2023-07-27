@@ -35,12 +35,12 @@ from typing import (
 
 import numpy as np
 
-from ._damerau_levenshtein import DamerauLevenshtein
-from ._distance import _Distance
-from ._lcprefix import LCPrefix
-from ._levenshtein import Levenshtein
-from ..stats import ConfusionTable
-from ..tokenizer import QGrams, QSkipgrams, WhitespaceTokenizer, _Tokenizer
+from abydos.distance._damerau_levenshtein import DamerauLevenshtein
+from abydos.distance._distance import _Distance
+from abydos.distance._lcprefix import LCPrefix
+from abydos.distance._levenshtein import Levenshtein
+from abydos.stats import ConfusionTable
+from abydos.tokenizer import QGrams, QSkipgrams, WhitespaceTokenizer, _Tokenizer
 
 __all__ = ['_TokenDistance']
 

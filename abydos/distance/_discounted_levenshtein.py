@@ -24,7 +24,7 @@ from typing import Any, Callable, List, Tuple, Union, cast
 
 import numpy as np
 
-from ._levenshtein import Levenshtein
+from abydos.distance._levenshtein import Levenshtein
 
 __all__ = ['DiscountedLevenshtein']
 

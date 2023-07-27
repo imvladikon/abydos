@@ -21,7 +21,7 @@ Caumanns German stemmer
 
 from unicodedata import normalize
 
-from ._stemmer import _Stemmer
+from abydos.stemmer._stemmer import _Stemmer
 
 __all__ = ['Caumanns']
 

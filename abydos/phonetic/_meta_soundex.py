@@ -19,11 +19,11 @@
 MetaSoundex
 """
 
-from ._metaphone import Metaphone
-from ._phonetic import _Phonetic
-from ._phonetic_spanish import PhoneticSpanish
-from ._soundex import Soundex
-from ._spanish_metaphone import SpanishMetaphone
+from abydos.phonetic._metaphone import Metaphone
+from abydos.phonetic._phonetic import _Phonetic
+from abydos.phonetic._phonetic_spanish import PhoneticSpanish
+from abydos.phonetic._soundex import Soundex
+from abydos.phonetic._spanish_metaphone import SpanishMetaphone
 
 __all__ = ['MetaSoundex']
 

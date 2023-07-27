@@ -22,7 +22,7 @@ Raup-Crick similarity
 from math import factorial
 from typing import Any
 
-from ._token_distance import _TokenDistance
+from abydos.distance._token_distance import _TokenDistance
 
 __all__ = ['RaupCrick']
 

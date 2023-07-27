@@ -21,9 +21,9 @@ Sift4 Extended approximate string distance
 
 from typing import Any, Callable, Dict, List, Optional, Union
 
-from ._distance import _Distance
-from ._sift4 import Sift4
-from ..tokenizer import CharacterTokenizer, _Tokenizer
+from abydos.distance._distance import _Distance
+from abydos.distance._sift4 import Sift4
+from abydos.tokenizer import CharacterTokenizer, _Tokenizer
 
 __all__ = ['Sift4Extended']
 

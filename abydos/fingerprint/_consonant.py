@@ -22,7 +22,7 @@ Taft's consonant coding
 from itertools import groupby
 from typing import Iterable, Optional, Union
 
-from ._fingerprint import _Fingerprint
+from abydos.fingerprint._fingerprint import _Fingerprint
 
 __all__ = ['Consonant']
 

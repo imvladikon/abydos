@@ -26,7 +26,7 @@ from typing import Any, Dict, Tuple, cast
 from numpy import float_ as np_float
 from numpy import zeros as np_zeros
 
-from ._distance import _Distance
+from abydos.distance._distance import _Distance
 
 
 __all__ = ['Typo']

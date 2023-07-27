@@ -19,7 +19,7 @@
 CLEF Swedish stemmer
 """
 
-from ._stemmer import _Stemmer
+from abydos.stemmer._stemmer import _Stemmer
 
 __all__ = ['CLEFSwedish']
 

@@ -21,7 +21,7 @@ Sift4 Simplest approximate string distance
 
 from typing import Any
 
-from ._sift4 import Sift4
+from abydos.distance._sift4 import Sift4
 
 __all__ = ['Sift4Simplest']
 

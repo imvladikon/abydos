@@ -23,11 +23,11 @@ from collections import defaultdict
 from math import log1p
 from typing import Any, DefaultDict, Optional, Tuple
 
-from ._distance import _Distance
-from ._jaro_winkler import JaroWinkler
-from ._token_distance import _TokenDistance
-from ..corpus import UnigramCorpus
-from ..tokenizer import _Tokenizer
+from abydos.distance._distance import _Distance
+from abydos.distance._jaro_winkler import JaroWinkler
+from abydos.distance._token_distance import _TokenDistance
+from abydos.corpus import UnigramCorpus
+from abydos.tokenizer import _Tokenizer
 
 __all__ = ['SoftTFIDF']
 

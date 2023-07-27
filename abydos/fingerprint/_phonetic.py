@@ -21,9 +21,9 @@ phonetic fingerprint
 
 from typing import Callable, Optional, Union
 
-from ._string import String
-from ..phonetic import DoubleMetaphone
-from ..phonetic._phonetic import _Phonetic
+from abydos.fingerprint._string import String
+from abydos.phonetic import DoubleMetaphone
+from abydos.phonetic._phonetic import _Phonetic
 
 
 __all__ = ['Phonetic']

@@ -51,9 +51,9 @@ an :py:class:`.NGramCorpus` and calculate TF values:
 
 """
 
-from ._corpus import Corpus
-from ._ngram_corpus import NGramCorpus
-from ._unigram_corpus import UnigramCorpus
+from abydos.corpus._corpus import Corpus
+from abydos.corpus._ngram_corpus import NGramCorpus
+from abydos.corpus._unigram_corpus import UnigramCorpus
 
 __all__ = ['Corpus', 'NGramCorpus', 'UnigramCorpus']
 

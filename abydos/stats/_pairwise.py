@@ -21,8 +21,8 @@ The stats._pairwise module implements pairwise statistical algorithms.
 
 from typing import Callable, Optional, Sequence, Set, Tuple, Union, cast
 
-from ._mean import amean, hmean, std
-from ..distance._levenshtein import Levenshtein
+from abydos.stats._mean import amean, hmean, std
+from abydos.distance._levenshtein import Levenshtein
 
 __all__ = ['mean_pairwise_similarity', 'pairwise_similarity_statistics']
 

@@ -22,7 +22,7 @@ Cisłak & Grabowski's count fingerprint
 from collections import Counter
 from typing import Tuple
 
-from ._fingerprint import MOST_COMMON_LETTERS_CG, _Fingerprint
+from abydos.fingerprint._fingerprint import MOST_COMMON_LETTERS_CG, _Fingerprint
 
 __all__ = ['Count']
 

@@ -21,8 +21,8 @@ Levenshtein distance with block operations
 
 from typing import Any, Callable, List, Tuple
 
-from ._lcsstr import LCSstr
-from ._levenshtein import Levenshtein
+from abydos.distance._lcsstr import LCSstr
+from abydos.distance._levenshtein import Levenshtein
 
 __all__ = ['BlockLevenshtein']
 

@@ -34,10 +34,10 @@ from typing import (
 from numpy import float_ as np_float
 from numpy import zeros as np_zeros
 
-from ._distance import _Distance
-from ._jaro_winkler import JaroWinkler
-from ..corpus import UnigramCorpus
-from ..tokenizer import QGrams, WhitespaceTokenizer, _Tokenizer
+from abydos.distance._distance import _Distance
+from abydos.distance._jaro_winkler import JaroWinkler
+from abydos.corpus import UnigramCorpus
+from abydos.tokenizer import QGrams, WhitespaceTokenizer, _Tokenizer
 
 __all__ = ['MetaLevenshtein']
 

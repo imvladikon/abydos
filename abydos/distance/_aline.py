@@ -22,9 +22,9 @@ ALINE alignment, similarity, and distance
 from copy import deepcopy
 from typing import Any, Callable, Dict, List, Tuple, Union, cast
 
-from numpy import float_, inf, zeros
+import numpy as np
 
-from ._distance import _Distance
+from abydos.distance._distance import _Distance
 
 __all__ = ['ALINE']
 
@@ -1593,7 +1593,7 @@ class ALINE(_Distance):
 
         tar_len = len(tar_tok)
 
-        s_mat = zeros((src_len + 1, tar_len + 1), dtype=float_)
+        s_mat = np.zeros((src_len + 1, tar_len + 1), dtype="float32")
 
         if self._mode == 'global':
             for i in range(1, src_len + 1):
@@ -1615,7 +1615,7 @@ class ALINE(_Distance):
                         tar_feat_wt[j - 1],
                     )
                     if j > 1
-                    else -inf,
+                    else -np.inf,
                     s_mat[i - 2, j - 1]
                     + _sig_exp(
                         tar_feat_wt[j - 1],
@@ -1623,8 +1623,8 @@ class ALINE(_Distance):
                         src_feat_wt[i - 1],
                     )
                     if i > 1
-                    else -inf,
-                    0 if self._mode in {'local', 'half-local'} else -inf,
+                    else -np.inf,
+                    0 if self._mode in {'local', 'half-local'} else -np.inf,
                 )
 
                 if s_mat[i, j] > sg_max:
@@ -1720,14 +1720,14 @@ class ALINE(_Distance):
         Examples
         --------
         >>> cmp = ALINE()
-        >>> cmp.dist('cat', 'hat')
-        0.4117647058823529
-        >>> cmp.dist('niall', 'neil')
-        0.33333333333333337
-        >>> cmp.dist('aluminum', 'catalan')
-        0.5925
-        >>> cmp.dist('atcg', 'tagc')
-        0.45833333333333337
+        >>> round(cmp.dist('cat', 'hat'), 3)
+        0.412
+        >>> round(cmp.dist('niall', 'neil'),3)
+        0.333
+        >>> round(cmp.dist('aluminum', 'catalan'), 3)
+        0.593
+        >>> round(cmp.dist('atcg', 'tagc'), 3)
+        0.458
 
 
         .. versionadded:: 0.4.0

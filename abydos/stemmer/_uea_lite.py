@@ -22,7 +22,7 @@ UEA-Lite stemmer
 from re import match as re_match
 from typing import Dict, Optional, Tuple
 
-from ._stemmer import _Stemmer
+from abydos.stemmer._stemmer import _Stemmer
 
 __all__ = ['UEALite']
 

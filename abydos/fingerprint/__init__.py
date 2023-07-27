@@ -67,13 +67,13 @@ returns the string's fingerprint:
 
 """
 
-from ._bwtf import BWTF
-from ._bwtrlef import BWTRLEF
-from ._consonant import Consonant
-from ._count import Count
-from ._extract import Extract
-from ._extract_position_frequency import ExtractPositionFrequency
-from ._fingerprint import (
+from abydos.fingerprint._bwtf import BWTF
+from abydos.fingerprint._bwtrlef import BWTRLEF
+from abydos.fingerprint._consonant import Consonant
+from abydos.fingerprint._count import Count
+from abydos.fingerprint._extract import Extract
+from abydos.fingerprint._extract_position_frequency import ExtractPositionFrequency
+from abydos.fingerprint._fingerprint import (
     MOST_COMMON_LETTERS,
     MOST_COMMON_LETTERS_CG,
     MOST_COMMON_LETTERS_DE,
@@ -81,17 +81,17 @@ from ._fingerprint import (
     MOST_COMMON_LETTERS_EN_LC,
     _Fingerprint,
 )
-from ._lacss import LACSS
-from ._lc_cutter import LCCutter
-from ._occurrence import Occurrence
-from ._occurrence_halved import OccurrenceHalved
-from ._omission_key import OmissionKey
-from ._phonetic import Phonetic
-from ._position import Position
-from ._qgram import QGram
-from ._skeleton_key import SkeletonKey
-from ._string import String
-from ._synoname_toolcode import SynonameToolcode
+from abydos.fingerprint._lacss import LACSS
+from abydos.fingerprint._lc_cutter import LCCutter
+from abydos.fingerprint._occurrence import Occurrence
+from abydos.fingerprint._occurrence_halved import OccurrenceHalved
+from abydos.fingerprint._omission_key import OmissionKey
+from abydos.fingerprint._phonetic import Phonetic
+from abydos.fingerprint._position import Position
+from abydos.fingerprint._qgram import QGram
+from abydos.fingerprint._skeleton_key import SkeletonKey
+from abydos.fingerprint._string import String
+from abydos.fingerprint._synoname_toolcode import SynonameToolcode
 
 __all__ = [
     '_Fingerprint',

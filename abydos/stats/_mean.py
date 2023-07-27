@@ -24,7 +24,7 @@ import math
 from collections import Counter
 from typing import Callable, Sequence
 
-from ..util._prod import _prod
+from abydos.util._prod import _prod
 
 __all__ = [
     'amean',

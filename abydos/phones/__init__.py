@@ -182,7 +182,7 @@ An example using these functions on two different pronunciations of the word
 
 """
 
-from ._phones import (
+from abydos.phones._phones import (
     cmp_features,
     get_feature,
     ipa_to_feature_dicts,

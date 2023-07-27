@@ -37,9 +37,9 @@ performed by creating a :py:class:`.BWT` object and then calling
 
 """
 
-from ._arithmetic import Arithmetic
-from ._bwt import BWT
-from ._rle import RLE
+from abydos.compression._arithmetic import Arithmetic
+from abydos.compression._bwt import BWT
+from abydos.compression._rle import RLE
 
 __all__ = [
     'Arithmetic',

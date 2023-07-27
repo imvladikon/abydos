@@ -21,7 +21,7 @@ SAPS class
 
 from typing import Callable, Optional, Union
 
-from ._tokenizer import _Tokenizer
+from abydos.tokenizer._tokenizer import _Tokenizer
 
 
 class SAPSTokenizer(_Tokenizer):

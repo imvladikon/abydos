@@ -19,9 +19,9 @@
 Oxford Name Compression Algorithm (ONCA)
 """
 
-from ._nysiis import NYSIIS
-from ._phonetic import _Phonetic
-from ._soundex import Soundex
+from abydos.phonetic._nysiis import NYSIIS
+from abydos.phonetic._phonetic import _Phonetic
+from abydos.phonetic._soundex import Soundex
 
 __all__ = ['ONCA']
 

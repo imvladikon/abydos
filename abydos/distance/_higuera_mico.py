@@ -23,7 +23,7 @@ from typing import Any
 
 from numpy import full as np_full
 
-from ._distance import _Distance
+from abydos.distance._distance import _Distance
 
 __all__ = ['HigueraMico']
 

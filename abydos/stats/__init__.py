@@ -167,8 +167,8 @@ True
 
 """
 
-from ._confusion_table import ConfusionTable
-from ._mean import (
+from abydos.stats._confusion_table import ConfusionTable
+from abydos.stats._mean import (
     aghmean,
     agmean,
     amean,
@@ -189,7 +189,7 @@ from ._mean import (
     std,
     var,
 )
-from ._pairwise import mean_pairwise_similarity, pairwise_similarity_statistics
+from abydos.stats._pairwise import mean_pairwise_similarity, pairwise_similarity_statistics
 
 __all__ = [
     'ConfusionTable',

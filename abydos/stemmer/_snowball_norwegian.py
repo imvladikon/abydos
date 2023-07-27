@@ -21,7 +21,7 @@ Snowball Norwegian stemmer
 
 from unicodedata import normalize
 
-from ._snowball import _Snowball
+from abydos.stemmer._snowball import _Snowball
 
 __all__ = ['SnowballNorwegian']
 
