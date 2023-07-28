@@ -648,8 +648,6 @@ from abydos.distance._yule_q_ii import YuleQII
 from abydos.distance._yule_y import YuleY
 
 __all__ = [
-    'AffineGapSimilarity',
-    'AffineGapDistance',
     '_Distance',
     '_TokenDistance',
     'Levenshtein',

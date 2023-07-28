@@ -73,25 +73,11 @@ def get_extra_requires(path, add_all=True, ext='*.txt'):
         extra_deps['all'] = set(vv for v in extra_deps.values() for vv in v)
     return extra_deps
 
-try:
-    from setuptools import Extension
-    from Cython.Build import cythonize
-    use_cython = True
-except ImportError:
-    use_cython = False
-
-if use_cython:
-    ext_modules = cythonize([Extension('abydos.distance.affinegap',
-                             ['abydos/distance/affinegap.pyx'])])
-else:
-    ext_modules = [Extension('abydos.distance.affinegap',
-                             ['abydos/distance/affinegap.c'])]
 
 setup(
     name=__package_name__,
     packages=find_packages(exclude=['tests*']),
     version=__version__,
-    ext_modules=ext_modules,
     description='Fork of the Abydos NLP/IR library',
     author='Christopher C. Little',
     author_email='chrisclittle+abydos@gmail.com',

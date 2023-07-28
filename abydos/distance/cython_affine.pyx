@@ -1,3 +1,7 @@
+# cython: boundscheck=False, wraparound=False
+# cython: cdivision=True
+# cython: c_string_type=unicode, c_string_encoding=utf8
+# cython: language_level=3
 import numpy as np
 import cython
 

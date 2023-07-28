@@ -2,14 +2,16 @@
 # -*- coding: utf-8 -*-
 from typing import Any
 
-import pyximport
+from abydos.distance._distance import _Distance
 
-from abydos.distance import _Distance
+__all__ = ['AffineGapDistance', 'AffineGapSimilarity']
 
 try:
     from abydos.distance.affinegap import affineGapDistance, normalizedAffineGapDistance
     from abydos.distance.cython_affine import affine, cython_sim_ident
 except ImportError:
+    import pyximport
+
     pyximport.install(inplace=True)
     from abydos.distance.affinegap import affineGapDistance, normalizedAffineGapDistance
     from abydos.distance.cython_affine import affine, cython_sim_ident
@@ -111,10 +113,3 @@ class AffineGapSimilarity(_Distance):
     def sim(self, src: str, tar: str) -> float:
         return self.sim_score(src, tar)
 
-
-if __name__ == '__main__':
-    # sim = AffineGapSimilarity()
-    # print(sim.sim_score('john', 'john'))
-    # print(sim.sim('john s', 'john d'))
-    sim = AffineGapSimilarity()
-    print(sim.sim('dva', 'dva'))
