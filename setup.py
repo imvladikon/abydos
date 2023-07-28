@@ -91,6 +91,7 @@ setup(
     name=__package_name__,
     packages=find_packages(exclude=['tests*']),
     version=__version__,
+    ext_modules=ext_modules,
     description='Fork of the Abydos NLP/IR library',
     author='Christopher C. Little',
     author_email='chrisclittle+abydos@gmail.com',

@@ -371,6 +371,7 @@ the fourth:
 
 """
 
+from abydos.distance._affinegap import AffineGapSimilarity, AffineGapDistance
 from abydos.distance._aline import ALINE
 from abydos.distance._ample import AMPLE
 from abydos.distance._anderberg import Anderberg
@@ -647,6 +648,8 @@ from abydos.distance._yule_q_ii import YuleQII
 from abydos.distance._yule_y import YuleY
 
 __all__ = [
+    'AffineGapSimilarity',
+    'AffineGapDistance',
     '_Distance',
     '_TokenDistance',
     'Levenshtein',
